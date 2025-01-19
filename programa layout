@@ -1,68 +1,38 @@
-import 'package:flutter/material.dart';
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+  If you are serving your web app in a path other than the root, change the 
+  href value below to reflect the base path you are serving from.
 
-void main() {
-  runApp(const App());
-}
+  The path provided below has to start and end with a slash "/" in order for 
+  it to work correctly.
 
-class App extends StatelessWidget {
-  const App({super.key});
+  For more details:
+  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'layout',
-      theme: ThemeData(
-      
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const HomePage(title: 'Programa Layout'),
-    );
-  }
-}
+  This is a placeholder for base href that will be replaced by the value of 
+  the --base-href argument provided to flutter build.
+  -->
+  <base href="app-layout">
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key, required this.title});
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
 
-  final String title;
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="myapp">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  @override
-  State< HomePage> createState() => _MyHomePageState();
-}
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
 
-class _ HomePageState extends State<MyHomePage> {
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-  
-    return Scaffold(
-      appBar: AppBar(
-        
-        title: Text(widget.title),
-      ),
-      body: Center(
-      
-        child: Column(
-        
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
-    );
-  }
-}
+  <title>app-layout</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
